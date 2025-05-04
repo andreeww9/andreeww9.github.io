@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* style.css */
 
 /* Hero Section */
@@ -21,3 +22,23 @@
     color: white;
     padding: 20px;
 }
+=======
+.hero-section {
+    background: url('ps5.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.features {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+>>>>>>> 3f60733 (Add activity 07)

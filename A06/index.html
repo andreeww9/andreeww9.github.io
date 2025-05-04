@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -70,4 +71,78 @@
 
 </body>
 
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery JS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid p-3 mb-2" style="background-color: rgb(67, 139, 167); color: rgb(200, 200, 200)">
+        <div class="h3 text-center">
+            Drew's Gallery
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row" id="container-row">
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+            Hi! I'm Drew, I love buying new shoes and clothes whenever I have money. I'm also into collecting different
+            perfumes, enjoy shopping at thrift stores (ukay-ukay), and I really like taking pictures, especially when I
+            feel good about my outfit.
+        </p>
+    </div>
+
+    <footer class="text-center py-4" style="background-color: rgb(70, 78, 81); color: white;">
+        <a href="../index.html" class="btn btn-outline-light mt-3">Back</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <script>
+        window.onload = function () {
+            var titles = ["Lance", "Andrew", "Malabanan", "Dela Cruz"];
+            var imageLinks = [
+                "andrew.jpg",
+                "eley.jpg",
+                "lance.jpg",
+                "LA.jpg"
+            ];
+
+            var rowElement = document.getElementById("container-row");
+            for (var i = 0; i < titles.length; i++) {
+                rowElement.innerHTML += `
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card my-3 shadow rounded-5 overflow-hidden">
+                            <img src="${imageLinks[i]}" class="card-img-top" alt="Image ${i + 1}">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">${titles[i]}</h5>
+                                <a href="#" class="btn btn-primary d-block mx-auto mt-3">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        };
+    </script>
+
+</body>
+
+>>>>>>> 3f60733 (Add activity 07)
 </html>
