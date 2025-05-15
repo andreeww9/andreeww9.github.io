@@ -14,7 +14,8 @@ body {
 }
 
 .result-card {
-    max-width: 500px;
+    max-width: 750px;
+    margin: 0 auto;
     padding: 40px 20px;
     border-radius: 30px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
